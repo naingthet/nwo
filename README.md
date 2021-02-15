@@ -13,6 +13,6 @@ In the limited time provided for this challenge, the goal was to develop an accu
 4. `main.py`: This script will accept and preprocess user input, then return the top search results. As mentioned, this script makes use of saved word vectors and indices, maximizing computation speed. 
 
 ## Potential Improvements
-There are no doubt improvements that can be made to the current implementation. The following approaches were considered because they 1) involve significantly longer training times and/or 2) require more time for development and validation than currently provided for.
+There are no doubt improvements that can be made to the current implementation. The following approaches were considered, but utimately not used for this challenge because they 1) involve significantly longer training times and/or 2) require more time for development and validation than currently provided for.
 1. **Topic Modeling**: Construct a topic model for the training data using LDA (Latent Dirichlet Allocation) and summarize each topic in a few words. Then, accept user input and search for the topics that are most related to the user input. 
 2. **Topic Clustering**: Cluster similar documents using Doc2Vec (document/paragraph-level Word2Vec) and use K Means Clustering to match user inputs to the most relevant topic clusters.
