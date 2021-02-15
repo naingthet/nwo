@@ -5,8 +5,9 @@ import pandas as pd
 # Query data directly from BigQuery. The queries will pull most recent tweets and reddit posts, and will only pull texts with more than 10 characters. This is to give preference to recent tweets and reddit posts, and to ensure that we avoid noise from posts and tweets that contain only a few words.
 
 # Project credentials and setup
+# Json key should be saved in a file named "credentials.json". The key is not included here for security reasons.
 credentials = service_account.Credentials.from_service_account_file(
-    'model/credentials.json'
+    'credentials.json'
 )
 
 project_id = 'nwo-sample'

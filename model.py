@@ -5,16 +5,15 @@ import pandas as pd
 import json
 import re
 import spacy
+from gensim.models.phrases import Phrases, Phraser, ENGLISH_CONNECTOR_WORDS
+import multiprocessing
+from gensim.models import Word2Vec
+from gensim.similarities.annoy import AnnoyIndexer
 
 # Clean data, train and save Word2Vec model, and save AnnoyIndexer model
 
 # import logging
 # logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=logging.INFO)
-
-from gensim.models.phrases import Phrases, Phraser, ENGLISH_CONNECTOR_WORDS
-import multiprocessing
-from gensim.models import Word2Vec
-from gensim.similarities.annoy import AnnoyIndexer
 
 ## Importing Data
 reddit_raw = pd.read_csv('data/reddit_raw.csv')

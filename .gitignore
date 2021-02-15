@@ -134,3 +134,4 @@ data/
 annoy_index*
 model.w2v*
 word2vec.wordvectors*
+credentials.json
